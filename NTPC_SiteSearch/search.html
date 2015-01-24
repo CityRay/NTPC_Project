@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Google Powered Site Search | Tutorialzine Demo</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+    <h1>Google Powered Site Search</h1>
+    
+    <form id="searchForm" method="post">
+		<fieldset>
+        
+           	<!-- <input id="s" type="text" />
+            
+            <input type="submit" value="Submit" id="submitButton" />
+            
+            <div id="searchInContainer">
+                <input type="radio" name="check" value="site" id="searchSite" checked />
+                <label for="searchSite" id="siteNameLabel">Search</label>
+                
+                <input type="radio" name="check" value="web" id="searchWeb" />
+                <label for="searchWeb">Search The Web</label>
+			</div>
+                        
+            <ul class="icons">
+                <li class="web" title="Web Search" data-searchType="web">Web</li>
+                <li class="images" title="Image Search" data-searchType="images">Images</li>
+                <li class="news" title="News Search" data-searchType="news">News</li>
+                <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+            </ul>
+ -->
+            
+            <div id="resultsDiv"></div>
+            
+        </fieldset>
+    </form>
+
+    <div id="searchDiv"></div>
+    <script>
+        var myCallback = function() {
+          if (document.readyState == 'complete') {
+            // Document is ready when CSE element is initialized.
+            // Render an element with both search box and search results in div with id 'test'.
+            google.search.cse.element.render(
+                {
+                  div: "resultsDiv",
+                  tag: 'search'                  
+                 });
+          } else {
+            // Document is not ready yet, when CSE element is initialized.
+            google.setOnLoadCallback(function() {
+               // Render an element with both search box and search results in div with id 'test'.
+                google.search.cse.element.render(
+                    {
+                      div: "resultsDiv",
+                      tag: 'search'
+                    });
+            }, true);
+          }
+        };
+
+        // Insert it before the CSE code snippet so that cse.js can take the script
+        // parameters, like parsetags, callbacks.
+        window.__gcse = {
+          parsetags: 'explicit',
+          callback: myCallback
+        };
+
+        (function() {
+          var cx = '013240084309666850260:lidzhwacqcm'; // Insert your own Custom Search engine ID here
+          var gcse = document.createElement('script'); gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https' ? 'https:' : 'http:') +
+              '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    
+</div>
+
+<!-- It would be great if you leave the link back to the tutorial. Thanks! -->
+<p class="credit"><a href="#">Powered by &amp; Google</a></p>
+    
+
+</body>
+</html>

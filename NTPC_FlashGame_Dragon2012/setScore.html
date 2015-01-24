@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FBShare</title>
+<script language="javascript" type="text/javascript" src="http://connect.facebook.net/zh_TW/all.js"></script>
+<script type="text/javascript" charset="utf-8">
+FB.init({
+    appId: '379442155427803', 
+    status: true, 
+    cookie: true,
+	oauth: true,
+    xfbml: true
+});
+
+</script>
+<style type="text/css">
+body{
+	margin:0px;
+}
+#cmain {
+	width:400px;
+	height:400px;
+	margin:0px;
+	background-image:url(assets/sharefb.png);
+}
+
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=379442155427803";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+	<div id="cmain"><div id="fbdiv"><button id="fbshere" type="button" onclick="myfbShare()">重新分享</button></div></div>    
+</body>
+
+<script type="text/javascript" charset="utf-8">
+		var url=window.location.toString();
+	 
+		var num="";
+		if(url.indexOf("?")!=-1)
+		{
+			num=url.split("?")[1];
+			document.getElementById('fbshere').onclick = Function("myfbShare(num)");
+			myfbShare(num);
+		}	
+		
+		
+		function myfbShare(num){
+		var score = num;	
+		
+		FB.login(function(response) {
+		if (response.authResponse) {
+		
+		FB.api('/me', function(response) {
+			
+			var params = {};
+			params['message'] = response.name+' 恭喜您!已吃到 "'+score+'" 顆粽子!!!趕快邀請朋友一起來呷粽!!! ~ 新北市政府祝您端午佳節愉快!!!';
+			params['name'] = '新北龍來呷粽';
+			params['description'] = '五月五，慶端午!新北市政府特別推出端午節小遊戲，快和可愛的新北阿龍一起來品嚐美味的粽子吧!';
+			params['link'] = 'http://www.imc.ntpc.gov.tw/activity/dragon2012/';
+			params['picture'] = 'http://www.imc.ntpc.gov.tw/activity/dragon2012/assets/fb02.png';
+			params['caption'] = 'www.ntpc.gov.tw';
+
+		FB.api('/me/feed', 'post', params, function(response) {
+			_name = response.name;
+		if (!response || response.error) {
+			console.log(response.error);
+			alert(response.error);
+		} else {
+			alert('訊息發佈成功!!!');
+			window.opener=null; 
+            window.close(); 
+		}
+		});
+		});
+		} else {
+		//console.log('User cancelled login or did not fully authorize.');
+		}
+		},{scope: 'email,publish_stream,user_about_me,user_birthday'});
+	}
+		
+</script>
+</html>

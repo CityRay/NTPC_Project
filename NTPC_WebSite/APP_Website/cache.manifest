@@ -1,0 +1,29 @@
+CACHE MANIFEST
+#ver 0.0.2
+CACHE:
+index.htm
+js/jquery.carouFredSel-6.1.0-packed.js
+js/jquery.touchSwipe.min.js
+css/ntpc.css
+img/menu/footer_bg.jpg
+img/headerTitle_bg.png
+img/menu/footer_button_4.jpg
+img/btn1_chg.png
+img/btn1.png
+img/01.png
+img/02.png
+img/03.png
+img/05.png
+img/06.png
+img/07.png
+img/08.png
+img/09.png
+img/10.png
+img/11.png
+img/13.png
+img/14.png
+img/15.png
+img/16.png
+NETWORK:
+*
+FALLBACK:

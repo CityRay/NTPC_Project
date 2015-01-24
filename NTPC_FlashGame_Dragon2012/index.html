@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>新北龍來呷粽</title>
+<link rel="shortcut icon" href="assets/ico.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="新北龍來呷粽" />
+<meta property="og:type" content="ACTIVITY"/>
+<meta property="og:url" content="http://www.imc.ntpc.gov.tw/activity/dragon2012/"/>
+<meta property="og:image" content="http://www.imc.ntpc.gov.tw/activity/dragon2012/assets/fb01.png" />
+<meta property="og:image" content="http://www.imc.ntpc.gov.tw/activity/dragon2012/assets/fb02.png" />
+<meta property="og:image" content="http://www.imc.ntpc.gov.tw/activity/dragon2012/assets/fb03.png" />
+<meta property="og:site_name" content="New Taipei City"/>
+<meta property="og:description" content="五月五，慶端午!新北市政府特別推出端午節小遊戲，快和可愛的新北阿龍一起來品嚐美味的粽子吧!!!" />
+<meta name="robots" content="index,follow" />
+<meta name="copyright" CONTENT="新北市政府版權所有">
+<meta name="URL" content="http://www.imc.ntpc.gov.tw/activity/dragon2012/">
+<meta name="description" content="五月五，慶端午!新北市政府特別推出端午節小遊戲，快和可愛的新北阿龍一起來品嚐美味的粽子吧!!!" />
+<link rel="canonical" href="http://www.imc.ntpc.gov.tw/activity/dragon2012/" />
+<script src="js/swfobject.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script>
+		var flashvars = {
+		};
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "#FFFFFF",
+			name:"hasPriority",
+			value:"true",
+			wmode: "direct"
+		};
+		var attributes = {
+			id:"NtpcGameV1"
+		};
+		swfobject.embedSWF(
+			"NtpcGameV1.swf", 
+			"altContent", "720px", "480px", "11.2", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+<script type="text/javascript">
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-31097987-1']);
+  		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+		
+	</script>
+<script type="text/javascript">  
+      window.___gcfg = {lang: 'zh-TW'};
+
+ 	 (function() {
+  	  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  	  po.src = 'https://apis.google.com/js/plusone.js';
+  	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ 	 })();
+	
+	function onstart()
+	{
+		if(window.XMLHttpRequest){ 
+			
+		}else {
+   			 alert('系統判斷您目前使用的瀏覽器版本太過老舊，且安全性不足。建議您更新或更換瀏覽器!!!');
+		}	
+	}
+	
+	$(function(){
+	// 先取得 .abgne-news-scroll ul, 並設定淡入及輪播時間
+	var $news = $('.abgne-news-scroll ul'), 
+		scrollHeight = $news.find('li').outerHeight(true), 
+		scrollSpeed = 600, fadeInSpeed = 600, 
+		timer, speed = 4500;
+ 
+	// 用來控制輪播用
+	function newsScroll(){
+		$news.animate({
+			top: scrollHeight + 'px'
+		}, scrollSpeed, function(){
+			// 當 .abgne-news-scroll ul 移動到定點後
+			// 先找出最後一個 li
+			var $last = $news.find('li:last');
+			// 複製一份並先隱藏起來
+			// 接著把它加到 .abgne-news-scroll ul 中的第一個項目
+			// 最後用淡入的方式顯示, 當顯示完後繼續輪播
+			$last.clone().hide().prependTo($news).fadeIn(fadeInSpeed, function(){
+				timer = setTimeout(newsScroll, speed);
+			});
+			// 馬上把 .abgne-news-scroll ul 移到 top 等於 0 的位置
+			$news.css('top', 0);
+			// 把 $last 移除掉
+			$last.remove();
+		});
+	}
+ 
+	// 啟動輪播計時器
+	timer = setTimeout(newsScroll, speed);
+});
+
+</script>
+<style>
+html, body {
+	height:100%;
+	overflow:auto;
+}
+body {
+	background-color:#FFFFFF;
+	background-image:url(images/bg.gif);
+	text-align:center;
+	margin:0px auto;
+}
+#wrapper {
+	width:946px;
+	height:100%;
+	text-align:center;
+	margin:0px auto;
+}
+#header {
+	width:946px;
+	height:178px;
+	background-image:url(images/index_01.gif);
+}
+#primary {
+	width:946px;
+}
+#flash {
+	width:946px;
+	height:480px;
+	background-image:url(images/index_02.gif);
+}
+#container {
+	position:relative;
+}
+#social_network {
+	width:100px;
+	height:84px;
+	position:absolute;
+	right:0px;
+	top:30px;
+}
+#flash_buttom {
+	width:946px;
+	height:76px;
+	background-image:url(images/index_03.gif);
+}
+#content {
+	width:946px;
+	height:auto;
+	background-image:url(images/index_04.gif);
+	text-align:left;
+}
+#content p {
+	font-size:80%;
+	color:#333333;
+	text-indent:26px;
+}
+#content_buttom {
+	width:946px;
+	height:70px;
+	background-image:url(images/index_05.gif);
+}
+#footer {
+	width:946px;
+	background-image:url(images/index_06.gif);
+}
+#footer p {
+	font-size:75%;
+	color:#333333;
+	float:right;
+	text-align:right;
+}
+#footer_buttom {
+	width:946px;
+	height:30px;
+	background-image:url(images/index_07.gif);
+}
+#footer a {
+	color:#03F;
+	text-decoration:none;
+}
+#footer a:hover {
+	color:#FF6600;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.abgne-news-scroll {
+	border: 0px;
+	width: 199px;
+	height: 300px;
+	overflow: hidden;
+
+}
+.abgne-news-scroll ul {
+	
+}
+.abgne-news-scroll li {
+	height:50px;
+	background: url(li_star.gif) no-repeat 5px 10px;
+	padding: 5px 0 5px 19px;
+}
+.abgne-news-scroll a {
+	font:13px 'Comic Sans MS', 'Microsoft YaHei', Arial, Tahoma, Sans-Serif;
+	letter-spacing: 1.5px;
+	color:#03C;
+}
+.abgne-news-scroll a:hover{
+	color:#FF6600;
+}
+</style>
+</head>
+<body onload="onstart()">
+<div id="wrapper">
+  <table width="946px">
+    <tr>
+      <td width="946px" height="3px"></td>
+    </tr>
+  </table>
+  <div id="header"></div>
+  <div id="primary">
+    <div id="flash">
+      <div id="container">
+        <div id="social_network">
+          <table width="100%" border="0">
+            <tr>
+              <td><a href="http://www.facebook.com/sharer.php?u=http://www.imc.ntpc.gov.tw/activity/dragon2012/&t=五月五，慶端午!新北市政府特別推出端午節小遊戲，快和可愛的新北阿龍一起來品嚐美味的粽子吧!!!" name="fb_share" target="_blank" type="button_count"><img src="images/btn_icon_fb.gif" border="0" onmouseover="this.src='images/btn_icon_fb_on.gif';" onmouseout="this.src='images/btn_icon_fb.gif';"style="margin:0 0 3px 0;"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="javascript: void(window.open('http://www.plurk.com/?qualifier=shares&amp;status=五月五，慶端午!新北市政府特別推出端午節小遊戲，快和可愛的新北阿龍一起來品嚐美味的粽子吧!!!' .concat(encodeURIComponent(location.href)) .concat(' ') .concat('(') .concat(encodeURIComponent(document.title)) .concat(')')));"><img src="images/btn_icon_plurk.gif" border="0" onmouseover="this.src='images/btn_icon_plurk_on.gif';" onmouseout="this.src='images/btn_icon_plurk.gif';"style="margin:0 0 3px 0;"/></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdev.twitter.com%2Fdocs%2Ftwitter-for-websites&source=tweetbutton&text=DragonBoatFestival%20for%20NewTaipeiCity&url=http://www.imc.ntpc.gov.tw/activity/dragon2012/" target="_blank"><img src="images/btn_icon_twitter.gif" border="0" onmouseover="this.src='images/btn_icon_twitter_on.gif';" onmouseout="this.src='images/btn_icon_twitter.gif';"style="margin:0 0 3px 0;"/></a></td>
+            </tr>
+            <tr>
+            <td>
+            <a href="https://plus.google.com/share?url=http://www.imc.ntpc.gov.tw/activity/dragon2012/" onclick="window.open('https://plus.google.com/share?url=http://www.imc.ntpc.gov.tw/activity/dragon2012/','gplusshare','width=480,height=350,left='+(screen.availWidth/2-225)+',top='+(screen.availHeight/2-150)+'');return false;"><img src="images/btn_icon_google.gif" alt="Share on Google+" border="0" width="28" height="28" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="altContent">
+        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="error.png" width="720" height="480" border="0"></a></p>
+      </div>
+    </div>
+    <div id="flash_buttom"> </div>
+    <div id="content">
+      <table width="946px">
+        <tr>
+          <td width="130px"></td>
+          <td width="500px">
+          	<table  width="510px">
+             <tr height="42px">
+             	<td>
+          			<img src="images/title_history.gif" border="0">
+                </td>
+             </tr>
+             <tr height="300px">
+             	<td>
+            <p>在戰國時代,屈原很受楚王器重，屈原的主張遭到上官大夫靳尚為首的守舊派的反對，不斷在楚懷王的面前詆毀屈原，楚懷王漸漸疏遠屈原，有遠大抱負的屈原倍感痛心。</p>
+            <p>在某年，秦國攻佔楚國八座城池，屈原看破了秦王的陰謀，冒死進宮陳述利害，楚懷王不但不聽，反而將屈原逐出郢都。楚懷王如期赴會，一到秦國就被囚禁起來，楚懷王悔恨交加，憂鬱成疾，三年後客死於秦國。</p>
+            <p>不久，秦王又派兵攻打楚國，當時的皇帝撤離京城，秦兵攻佔郢城。屈原在流放途中，接連聽到楚懷王去世和郢城攻破的消息後，仰天長嘆一聲，投入了滾滾激流的汩羅江。</p>
+            <p>江上的漁夫和岸上的百姓，聽說屈原投江自盡，都紛紛來到江上，為了不讓跳下汨羅江的屈原屍體被魚蝦吃掉，所以在江裡投下許多用竹葉包裹的米食（粽子），並且競相划船（賽龍船）希望找到屈原的屍體。</p>
+            <p>從此，每年五月初五是屈原投江殉難日，楚國人民都到江上划龍舟，投粽子，以此來紀念偉大的愛國詩人，端午節的風俗就這樣流傳下來。</p>
+            	</td>
+            </tr>
+            </table>
+          </td>
+          <td width="200px">
+          
+          <table  width="200px">
+             <tr height="42px">
+             	<td>
+          			<img src="images/title_link.gif" border="0">
+                </td>
+             </tr>
+             <tr height="300px">
+             	<td>
+			<div class="abgne-news-scroll">
+			<ul><li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2347" target="_blank">包泥粽－粽子鈴鐺</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=3034" target="_blank">【新北市立圖書館-中和員山分館】端午節節慶活動~彩繪保庇面具</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=3033" target="_blank">【新北市立圖書館-中和分館】端午節節慶活動~彩繪保庇面具</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=3035" target="_blank">【新北市立圖書館-中和分館】當節慶遇上閱讀-五月五玩端午</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2808" target="_blank">【新北市立圖書館淡水水碓分館】端午節慶活動~彩繪保庇面具</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2814" target="_blank">【新北市立圖書館-鶯歌分館】端午節節慶活動~彩繪保庇面具活動</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2807" target="_blank">【新北市立圖書館新店分館】端午手作香包 包包香氣傳情</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2858" target="_blank">2012新北市永和區慶端午活動-手繪端午‧樂活一夏</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2859" target="_blank">2012新北市永和區慶端午活動-藝遊粽夏‧童歡晚會</a></li>
+            <li><a href="http://www.ntpc.gov.tw/ap/newcalendar/newcalendar_info.jsp?id=2671" target="_blank">新北市蘆洲區2012年熱鬧慶端午暨學子祈福活動</a></li>
+            </ul></div>
+            	</td>
+            </tr>
+            </table>  
+          
+          </td>
+          <td width="116px"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="content_buttom"> </div>
+  </div>
+  <div id="footer">
+    <table width="946px">
+      <tr>
+        <td width="120px"></td>
+        <td width="270px"><p style="float:left;">主辦單位:</p>
+          <a href="http://www.ntpc.gov.tw" target="_blank"><img src="images/logo_ntpc.gif" border="0" style="margin:0 0 0 20px;"></a></td>
+        <td width="440px"><p>新北市板橋區中山路1段161號<br>
+            建議用IE 8.0以上版本及1024*768 以上之解析度觀看本網站<br>
+            本網站為&nbsp;<a href="http://www.ntpc.gov.tw" target="_blank">新北市政府</a>&nbsp;版權所有，未經允許，不得以任何形式複製和採用</p></td>
+        <td width="116px"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="footer_buttom"></div>
+  <table width="946px">
+    <tr>
+      <td width="946px" height="70px"></td>
+    </tr>
+  </table>
+</div>
+</div>
+</div>
+</body>
+</html>

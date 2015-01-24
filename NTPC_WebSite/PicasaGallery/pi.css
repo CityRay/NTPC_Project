@@ -1,0 +1,106 @@
+/*By NTPC Ray*/
+img {
+	border:0 none;
+	}
+.clear {
+	clear:both;}
+a,a visited{
+	color:#666;
+	text-decoration:none;
+	margin:15px auto;}
+p{
+	padding:0px;
+	margin:4px 0px;
+	text-align:left;
+	letter-spacing:0.7pt;
+	text-decoration:underline;
+
+}
+
+a:hover{
+	color:#000;}
+body{
+	font:13px 'Comic Sans MS','Microsoft YaHei',Arial,Tahoma,Sans-Serif;
+	color:#555;
+	margin:5px auto 5px auto;
+}
+#head{
+	background-image:url(back.jpg);
+	margin:auto;
+	width:968px;
+	height:213px;
+	padding:0px auto 0px auto;
+}
+#items{
+	margin:auto;
+	padding:41px 0px 0px 50px;
+	width:910px;
+
+	
+}
+#item1{
+	padding:0px 0px 0px;	
+}
+#item2{
+	padding:0px 0px 0px;	
+}
+#item3{
+	padding:0px 0px 0px;	
+}
+#item4{
+	padding:0px 0px 0px;	
+}
+#item5{
+	padding:0px 0px;	
+}
+
+.itemsc{
+	width:160px;
+	margin:0px auto 0px auto;
+	float:left;
+	
+	margin-right:12px;
+	
+	}
+
+.thumb{
+	width:160px;
+	height:120px;	
+	padding:2px;
+	border:1px solid #aaa;
+	-webkit-box-shadow:1px 1px 5px #ccc;
+	-moz-box-shadow:0px 0px 5px #ccc;
+	box-shadow:1px 1px 5px #ccc;
+
+	
+	}
+.thumb img{
+	width:160px;
+	height:120px;
+
+	}
+.loader{
+	text-align:center;
+	margin:50px auto auto auto;
+}
+.loader img{
+	width:16px;
+	height:16px;
+}
+
+.clearfix:after{
+¡@content:".";
+¡@display:block;
+¡@height:0;
+¡@clear:both;
+¡@visibility:hidden;
+}
+
+.clearfix{
+¡@display:inline-block;
+}
+
+/* Hide from IE Mac */
+.clearfix {
+¡@display:block;
+}

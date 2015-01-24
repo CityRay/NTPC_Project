@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>線上客服系統</title>
+<style>
+	input{width:250px; border:solid 1px #ccc;}
+	textarea{width:300px; height:100px; border:solid 1px #ccc;}
+	table{font-size:12px; color:#666; border:solid 1px #C1C1C1;}
+	table tr td{padding:7px;}
+	.btn{background:#fff; width:auto;}
+</style>
+<script>
+function checkform(){
+	var name=document.getElementById("sndname").value;
+	var mail=document.getElementById("sendmail").value;
+	var subject=document.getElementById("subject").value;
+	var mailbody=document.getElementById("sendbody").value;
+ 
+	if(name !="" && mail!="" && subject!="" && mailbody!=""){
+		document.form1.submit();
+	}else{
+		alert("請確認下列欄位是否都已填寫:\n1.姓名\n2.Email\n3.回應類別\n4.回應內容");
+	}
+}
+</script>
+</head>
+ 
+<body>
+<form id="form1" name="form1" method="post" action="sendmail.php"><br />
+  <h2 style="width:400px; margin:0 auto; color:#333333;">線上客服系統</h2>
+  <table width="400" height="211" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="71" align="center" bgcolor="#e7e7e7">姓名</td>
+      <td width="314" bgcolor="#e7e7e7"><label>
+        <input type="text" name="sndname" id="sndname" />
+      </label></td>
+    </tr>
+    <tr>
+      <td align="center">Email</td>
+      <td><input type="text" name="sendmail" id="sendmail" /></td>
+    </tr>
+    <tr>
+      <td align="center" bgcolor="#E7E7E7">回應類別</td>
+      <td bgcolor="#E7E7E7">
+        <select name="subject" id="subject">
+          <option value="站務問題" selected="selected">站務問題</option>
+          <option value="合作提案">合作提案</option>
+          <option value="其它問題">其它問題</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td height="64" align="center">回應內容</td>
+      <td><textarea name="sendbody" id="sendbody"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" bgcolor="#FFFFFF"><label>
+        <input type="button" name="button" id="button" value="送 出" class="btn" onclick="checkform();"/>
+        <input type="reset" name="button2" id="button2" value="取 消" class="btn"/>
+      </label></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
